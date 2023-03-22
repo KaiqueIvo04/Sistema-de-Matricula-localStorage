@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.principal {
+    /* Login */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 502px 88px;
+    position: relative;
+    width: auto;
+    height: auto;
+
+    background: #EAEAEA;
+}
+
+.principal>img {
+    /* universidadeOxford 1 */
+    width: 210px;
+    height: 250px;
+}
+
+.principal>h1 {
+    /* Sistema de Controle Acadêmico */
+    width: 400px;
+    height: 83px;
+    margin-top: 50;
+
+    /* font-style */
+    font-family: 'Noto Serif TC';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 46px;
+    text-align: center;
+    color: #767676;
+}
+
+.box-login {
+    /* box-login */
+    box-sizing: border-box;
+
+    width: 414px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px;
+    gap: 30px;
+
+    background: #143F94;
+    border: 1px solid #000000;
+    order: 2;
+    border-radius: 15px;
+}
+
+.box-login>h2 {
+    /* text-login */
+    width: 80px;
+    height: 46px;
+
+    border-bottom: 2px solid #FFFFFF;
+    font-family: 'Noto Serif TC';
+    font-style: normal;
+    font-weight: 650;
+    font-size: 32px;
+    line-height: 46px;
+    color: #FFFFFF;
+}
+
+.box-form {
+    /* box-form */
+    width: 354px;
+    height: 55px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+}
+
+.box-form>label {
+    /* Usuário */
+    width: 64px;
+    height: 23px;
+
+    font-family: 'Noto Serif TC';
+    font-style: normal;
+    font-weight: 650;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+    transition: ease-in-out 0.6s;
+}
+
+.box-form>input {
+    /*Input-text*/
+    width: 354px;
+    height: 30px;
+    padding: 0;
+
+    color: #FFFFFF;
+    font-size: 20px;
+    position: absolute;
+    border-style: none;
+    background: none;
+    box-sizing: border-box;
+    border-bottom: 2px solid #FFFFFF;
+    outline: 0;
+    transition: ease-in-out 0.6s;
+}
+
+.box-form>input:focus ~ label, .box-form>input:valid ~ label{
+    transform: translateY(-24px);
+    font-size: 16px;
+}
+
+.box-button {
+    /*Input-button*/
+    width: 354px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+}
+
+.box-button>input {
+    /* button-entrar */
+    width: 354px;
+    height: 43px;
+
+    color: #FFFFFF;
+    font-size: 20px;
+    border-style: none;
+    background: #C88A02;
+    cursor: pointer;
+}
+
+.box-button>input:hover {
+    /*button-entrar hover*/
+    background: #865C00;
+}
+
+.box-button>input:active{
+    /*button-entrar click*/
+    border: 2px solid #FFFFFF;
+}

@@ -1,0 +1,193 @@
+body {
+    /* body */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background: url(src/fotoUniversityOxford.png) no-repeat fixed 70% 100%;
+    background-size: 100vw;
+}
+
+.foto-background {
+    /* photo-background */
+    position: absolute;
+    width: auto;
+    height: 100vh;
+}
+
+.cabecalho {
+    /* header */
+    width: auto;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 0px;
+
+    background: #143F94;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.cabecalho-logo {
+    /* logo */
+    width: 381.53px;
+    height: 120px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+
+
+    background: #EAEAEA;
+}
+
+.cabecalho-logo>img {
+    /* universidadeOxford 2 */
+    width: 83.53px;
+    height: 100px;
+}
+
+.cabecalho-logo>h1 {
+    /* University of Oxford */
+    width: 268px;
+    height: 92px;
+
+    font-family: 'Noto Serif TC';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 46px;
+    text-align: center;
+
+    color: #767676;
+    -webkit-text-stroke: 0.5px #000000;
+}
+
+.nav-cabecalho {
+    /* nav-bar */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    gap: 40px;
+
+    width: 1058px;
+    height: 90px;
+}
+
+.nav-cabecalho>a {
+    /* link-buttons-nav */
+    text-decoration: none;
+    color: #000000;
+    border-radius: 10px;
+}
+
+.nav-cabecalho>a>div {
+    /* nav-buttons */
+    width: 150px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 7px;
+
+    background: #2266F0;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    transition: all ease-in-out 0.3s;
+}
+
+.nav-cabecalho>a>div:hover {
+    /* animation-buttons-nav */
+    transform: scale(1.05);
+    border: 2px solid #FFFFFF;
+}
+
+.nav-cabecalho>a>div>img {
+    /* nav-buttons-image */
+    width: auto;
+    height: 26px;
+}
+
+.nav-cabecalho>a>div>p {
+    /* nav-buttons-text */
+    width: auto;
+    height: 34px;
+
+    font-family: 'Noto Serif TC';
+    font-style: normal;
+    font-weight: 550;
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+}
+
+.conteudo {
+    /* main */
+    width: auto;
+    height: 100vh;
+    display: flex;
+    padding: 62px 97px;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo-principal {
+    /* main-content */
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 15px;
+    box-sizing: border-box;
+
+    background: #EAEAEA;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+}
+
+.foto-usuario {
+    /* backgroun-photo-user */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    box-sizing: border-box;
+    width: 318px;
+    height: 307px;
+
+    background: rgba(200, 138, 2, 0.4);
+    border: 5px solid #FFFFFF;
+    border-radius: 15px;
+}
+
+.foto-usuario>img {
+    /* photo-user */
+    width: 230px;
+    height: 230px;
+}
+
+.conteudo-principal-informacao {
+    /* principal-content-information */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 15px;
+    width: 1187px;
+    height: 44px;
+    font-weight: bold;
+
+    background: rgba(200, 138, 2, 0.4);
+    border: 2px solid #FFFFFF;
+    border-radius: 15px;
+}
