@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nixie+One&family=Roboto:wght@300&display=swap');
+
 body {
     /* body */
     margin: 0;
@@ -183,11 +185,18 @@ body {
     flex-direction: row;
     align-items: center;
     padding: 5px 15px;
-    width: 1187px;
-    height: 44px;
-    font-weight: bold;
+    width: 75vw;
+    height: 5vh;
+    gap: 5px;
+    font-weight: 1000;
+    font-family: 'Roboto', sans-serif;
 
     background: rgba(200, 138, 2, 0.4);
     border: 2px solid #FFFFFF;
     border-radius: 15px;
+}
+
+.informacao {
+    /* text-information */
+    color: #474747;
 }

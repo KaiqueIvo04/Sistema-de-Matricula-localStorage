@@ -9,25 +9,24 @@
     <script defer src="script.js"></script>
 </head>
 <body>
-    
     <main>
         <section class="principal">
-            <img src="universidadeOxford.png" alt="University of Oxford">
-            <h1>Sistema de controle acadêmico</h1>
-            <form>
-                <div class="box-login">
-                    <h2>Login</h2>
-                    <div class="box-form">
-                        <input id="usuario" type="text">
-                        <label for="usuario">Usuário</label>
-                    </div>
-                    <div class="box-form">
-                        <input id="senha" type="password">
-                        <label for="senha">Senha</label>
-                    </div>
-                    <div class="box-button">
-                        <input id="button-entrar" type="button" value="Entrar">
-                    </div>
+            <div class="box-university">
+                <img src="universidadeOxford.png" alt="University of Oxford">
+                <h1>Sistema de controle acadêmico</h1>
+            </div>
+            <form class="login">
+                <h2>Login</h2>
+                <div class="box-form">
+                    <input id="usuario" type="text" required>
+                    <label for="usuario">Usuário</label>
+                </div>
+                <div class="box-form">
+                    <input id="senha" type="password" required>
+                    <label for="senha">Senha</label>
+                </div>
+                <div class="box-button">
+                    <input id="button-entrar" type="button" value="Entrar">
                 </div>
             </form>
         </section>
