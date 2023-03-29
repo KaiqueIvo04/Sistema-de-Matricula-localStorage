@@ -168,17 +168,21 @@ body {
 
     font-weight: 1000;
 }
-
+/*Falta comentar */
 .tipo-info-lista {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    gap: 10%;
+    gap: 0;
 
     -webkit-text-stroke: 0.5px #000000;
     font-weight: 1000;
     background-color: #143F94;
+}
+
+.tipo-info-lista>p {
+    width: 10%;
 }
 
 .item-lista-cor1 {
@@ -186,9 +190,13 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    gap: 10%;
+    gap: 0;
 
     background-color: #DEC899;
+}
+
+.item-lista-cor1>p {
+    width: 10%;
 }
 
 .item-lista-cor2 {
@@ -196,9 +204,23 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    gap: 10%;
+    gap: 0;
 
     background-color: #E5DCC7;
+}
+
+.item-lista-cor2>p {
+    width: 10%;
+}
+
+.item-lista-erro {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 5%;
+
+    background-color: #f00e0e;
 }
 
 .buttons-lista {

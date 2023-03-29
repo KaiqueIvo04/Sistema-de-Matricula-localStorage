@@ -11,37 +11,12 @@ function getUserInformations() {
 
 function showInformations(user) {
     let divs = document.querySelectorAll('.conteudo-principal-informacao');
-    switch (user.userType) {
-        case 'SECRETARY':
-            const keysSecretary = ["id", "name", "email", "id_number", "userType", "birthDate"];
-            for(let i = 0; i < divs.length; i++) {
-                let text = document.createElement("p");
-                text.innerText = user[keysSecretary[i]];
-                divs[i].appendChild(text);
-                divs[i].childNodes[1].className = "elemento";
-            }
-            break;
-        case 'STUDENT':
-            const keysStudent = ["id", "name", "email", "id_number", "userType", "birthDate", "course", "registration"];
-            for(let i = 0; i < divs.length; i++) {
-                let text = document.createElement("p");
-                text.innerText = user[keysStudent[i]];
-                divs[i].appendChild(text);
-                divs[i].childNodes[1].className = "elemento";
-            }
-            break;
-        case 'TEACHER':
-            let divs = document.querySelectorAll('.conteudo-principal-informacao');
-            const keysTeacher = ["id", "name", "email", "id_number", "userType", "birthDate", "course", "registration"];
-            for(let i = 0; i < divs.length; i++) {
-                let text = document.createElement("p");
-                text.innerText = user[keysTeacher[i]];
-                divs[i].appendChild(text);
-                divs[i].childNodes[1].className = "elemento";
-            }
-            break;
-        default:
-            break;
+    const keysTeacher = ["id", "name", "email", "id_number", "userType", "birthDate", "course", "registration"];
+    for (let i = 0; i < divs.length; i++) {
+        let text = document.createElement("p");
+        text.innerText = user[keysTeacher[i]];
+        divs[i].appendChild(text);
+        divs[i].childNodes[1].className = "elemento";
     }
 }
 

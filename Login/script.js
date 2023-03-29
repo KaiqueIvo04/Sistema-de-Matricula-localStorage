@@ -24,12 +24,14 @@ async function verifyLogin() {
 
     let token = await enviaLogin.text();
     token = "Bearer " + token;
+    localStorage.setItem('token', token);
+
 
     const responseMe = await fetch(url + "/api/user/me", {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',
-            'Authorization': token,
+            'Authorization': localStorage.getItem('token'),
         },
     });
 
