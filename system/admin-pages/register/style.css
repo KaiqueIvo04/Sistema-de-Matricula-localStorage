@@ -1,0 +1,242 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #EAEAEA;
+}
+
+#button-voltar {
+    width: 100px;
+    height: 50px;
+    top: 25px;
+    left: 55px;
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 20px;
+    border-style: none;
+    background: #C88A02;
+    cursor: pointer;
+}
+
+#button-voltar:hover {
+    /*button-voltar hover*/
+    background: #865C00;
+}
+
+#button-voltar:active {
+    /*button-voltar click*/
+    border: 2px solid #000000;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.principal {
+    /* register */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap: 15%;
+
+    background: #EAEAEA;
+}
+
+.box-university {
+    width: max-content;
+    height: 66%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.box-university>img {
+    /* universidadeOxford 1 */
+    width: 300px;
+    height: 350px;
+}
+
+.box-university>h1 {
+    /* Sistema de Controle Acadêmico */
+    width: 400px;
+    margin: 0;
+
+    /* font-style */
+    font-family: 'Noto Serif TC';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 46px;
+    text-align: center;
+    color: #767676;
+}
+
+.register {
+    /* box-register */
+    width: 355px;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px;
+    gap: 30px;
+
+    background: #143F94;
+    border: 1px solid #000000;
+    border-radius: 15px;
+}
+
+.register>h2 {
+    /* text-register */
+    margin: 0;
+    border-bottom: 2px solid #FFFFFF;
+    font-family: 'Noto Serif TC';
+    font-style: normal;
+    font-weight: 650;
+    font-size: 32px;
+    line-height: 46px;
+    color: #FFFFFF;
+}
+
+.box-select {
+    /* div-select-user-type */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+#user-type {
+    /* select-user-type */
+    width: 100%;
+    height: 55px;
+    outline: 0;
+    font-size: 20px;
+    color: #FFFFFF;
+    background: #C88A02;
+}
+
+.box-form {
+    /* box-form */
+    width: inherit;
+    height: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+}
+
+.box-form>label {
+    /* Usuário */
+    font-family: 'Noto Serif TC';
+    font-style: normal;
+    font-weight: 650;
+    font-size: 20px;
+
+    color: #FFFFFF;
+    transition: ease-in-out 0.6s;
+}
+
+.box-form>input {
+    /*Input-text*/
+    width: inherit;
+    height: 30px;
+    padding: 0;
+    color: #FFFFFF;
+    font-size: 20px;
+    position: absolute;
+    border-style: none;
+    background: none;
+    box-sizing: border-box;
+    border-bottom: 2px solid #FFFFFF;
+    outline: 0;
+    transition: ease-in-out 0.6s;
+}
+
+.box-form>input:focus~label {
+    transform: translateY(-24px);
+    font-size: 16px;
+}
+
+.box-form>input:valid~label {
+    transform: translateY(-24px);
+    font-size: 16px;
+}
+
+.box-button {
+    /*Input-button*/
+    width: inherit;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+}
+
+.box-button>input {
+    /* button-registrar */
+    width: inherit;
+    height: 43px;
+    color: #FFFFFF;
+    font-size: 20px;
+    border-style: none;
+    background: #C88A02;
+    cursor: pointer;
+}
+
+.box-button>input:hover {
+    /*button-register hover*/
+    background: #865C00;
+}
+
+.box-button>input:active {
+    /*button-register click*/
+    border: 2px solid #FFFFFF;
+}
+
+@media screen and (max-width: 1000px) {
+    .principal {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .register {
+        width: 70vw;
+    }
+
+    .box-university {
+        gap: 0;
+    }
+
+    .box-university>img {
+        /* universidadeOxford 1 */
+        width: 200px;
+        height: 250px;
+    }
+
+    .box-university>h1 {
+        /* Sistema de Controle Acadêmico */
+        width: 300px;
+        margin-top: 0;
+
+        /* font-style */
+        font-family: 'Noto Serif TC';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 48px;
+        line-height: 46px;
+        text-align: center;
+        color: #767676;
+    }
+}

@@ -6,8 +6,12 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    background: url(../../../src/fotoUniversityOxford.png) no-repeat fixed 70% 100%;
-    background-size: 100vw;
+    background: url(../../../src/fotoUniversityOxford.png) no-repeat fixed 100% 100%;
+    background-size: cover;
+}
+
+#button-sair {
+    background: #C88A02;
 }
 
 .foto-background {

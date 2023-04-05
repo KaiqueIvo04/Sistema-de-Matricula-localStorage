@@ -66,48 +66,62 @@ async function getAllSubjectsByCourses() {
 async function showUsers(users) {
     let listaUsuarios = document.querySelector('.lista-usuarios'); //Pega o elemento da lista de usuários no html
     users = await users;
-    
-    //Adiciona uma ficha na lista de usuários para cada usuário
-    for (let i = 0; i < users.length; i++) {
-        //Cria elementos html para inserir uma ficha
-        let keys = ['id', 'userType', 'name', 'course', 'id_number'];
-        let listItem = document.createElement('li');
-        let div = document.createElement('div');
-        listItem.appendChild(div);
-        for (let j = 0; j < 5; j++) {
-            let text = document.createElement('p');
-            text.innerText = users[i][keys[j]];
-            div.appendChild(text);
-        }
 
-        //Verificar se existem usuários, se não criar um div com erro
-        if (listaUsuarios.lastElementChild == null) {
-            let listItemError = document.createElement('li');
-            let divError = document.createElement('div');
-            let textError = document.createElement('p');
-            divError.className = 'item-lista-erro';
-            textError.innerText = "Erro, nenhum usuário existente!";
-            divError.appendChild(textError);
-            listItemError.appendChild(divError);
-            listaUsuarios.appendChild(listItemError);
-        }
+    if (users.length > 0) {
+        console.log("entrou")
+        //Adiciona uma ficha na lista de usuários para cada usuário
+        for (let i = 0; i < users.length; i++) {
+            //Cria elementos html para inserir uma ficha
+            let keys = ['id', 'userType', 'name', 'course', 'id_number'];
+            let listItem = document.createElement('li');
+            let div = document.createElement('div');
+            listItem.appendChild(div);
+            for (let j = 0; j < 5; j++) {
+                let text = document.createElement('p');
+                text.innerText = users[i][keys[j]];
+                div.appendChild(text);
+            }
 
-        const lastItemDiv = listaUsuarios.lastElementChild.firstElementChild; //Pega a div do último elemento da lista
-        //Distribuição de cores da lista
-        if (lastItemDiv.className == 'item-lista-cor2') {
-            div.className = 'item-lista-cor1';
-            listaUsuarios.appendChild(listItem);
-        } else if (lastItemDiv.className == 'item-lista-cor1') {
-            div.className = 'item-lista-cor2';
-            listaUsuarios.appendChild(listItem);
-        } else {
-            div.className = 'item-lista-cor1';
-            listaUsuarios.appendChild(listItem);
-            document.querySelector('.item-lista-erro').style.display ='none';
+            //Verificar se existem usuários, se não criar um div com erro
+            if (listaUsuarios.lastElementChild == null) {
+                let listItemError = document.createElement('li');
+                let divError = document.createElement('div');
+                let textError = document.createElement('p');
+                divError.className = 'item-lista-erro';
+                textError.innerText = "Erro, nenhum usuário existente!";
+                divError.appendChild(textError);
+                listItemError.appendChild(divError);
+                listaUsuarios.appendChild(listItemError);
+            }
+
+            const lastItemDiv = listaUsuarios.lastElementChild.firstElementChild; //Pega a div do último elemento da lista
+            //Distribuição de cores da lista
+            if (lastItemDiv.className == 'item-lista-cor2') {
+                div.className = 'item-lista-cor1';
+                listaUsuarios.appendChild(listItem);
+            } else if (lastItemDiv.className == 'item-lista-cor1') {
+                div.className = 'item-lista-cor2';
+                listaUsuarios.appendChild(listItem);
+            } else {
+                div.className = 'item-lista-cor1';
+                listaUsuarios.appendChild(listItem);
+                document.querySelector('.item-lista-erro').style.display = 'none';
+            }
         }
+    } else {
+        let listItemError = document.createElement('li');
+        let divError = document.createElement('div');
+        let textError = document.createElement('p');
+        divError.className = 'item-lista-erro';
+        textError.innerText = "Erro, nenhum usuário existente!";
+        divError.appendChild(textError);
+        listItemError.appendChild(divError);
+        listaUsuarios.appendChild(listItemError);
     }
+
+
 }
 
 showUsers(getAllSubjectsByCourses());
-
+//Falta fazer mostrar os SECRETARY
 

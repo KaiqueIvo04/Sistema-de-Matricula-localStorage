@@ -5,6 +5,7 @@ const buttonEntrar = document.querySelector('#button-entrar');
 const inputUser = document.getElementById('usuario').value;
 const inputPassword = document.getElementById('senha').value;
 
+//Verifica usuario e senha, e retorna um objeto com os dados do usuário
 async function verifyLogin() {
     const inputUser = document.getElementById('usuario').value;
     const inputPassword = document.getElementById('senha').value;
@@ -38,8 +39,14 @@ async function verifyLogin() {
     const jsonUser = await responseMe.json();
     return jsonUser;
 }
+//Evento para quando for pressionado enter disparar o clique no botão entrar
+document.addEventListener("keypress", function(e) {
+    if(e.key === 'Enter') {
+        buttonEntrar.click();
+    }
+});
 
-
+//Evento de clique no botão para logar
 buttonEntrar.addEventListener("click", async () => {
     let user = await verifyLogin();
     if (user.userType === "SECRETARY") {

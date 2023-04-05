@@ -123,10 +123,8 @@ body {
 .nav-cabecalho>a>div>p {
     /* nav-buttons-text */
     width: auto;
-    height: 34px;
 
     font-family: 'Noto Serif TC';
-    font-style: normal;
     font-weight: 550;
     font-size: 24px;
     line-height: 34px;
@@ -135,17 +133,17 @@ body {
 
 .conteudo {
     /* main */
-    width: auto;
     height: 100vh;
     display: flex;
     padding: 62px 97px;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 
 .conteudo-principal {
     /* main-content */
-    position: absolute;
+    width: 60vw;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -153,54 +151,98 @@ body {
     padding: 30px;
     gap: 15px;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 
     background: #EAEAEA;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
     border-radius: 50px;
 }
 
-.foto-usuario {
-    /* backgroun-photo-user */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    gap: 10px;
-    box-sizing: border-box;
-    width: 318px;
-    height: 307px;
-
-    background: rgba(200, 138, 2, 0.4);
-    border: 5px solid #FFFFFF;
-    border-radius: 15px;
+.conteudo-principal>h1 {
+    font-size: 36px;
 }
 
-.foto-usuario>img {
-    /* photo-user */
-    width: 230px;
-    height: 230px;
-}
-
-.conteudo-principal-informacao {
-    /* principal-content-information */
+.disciplinas-conteudo-principal {
+    /* disciplinas */
+    width: 100%;
+    height: 25%;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 5px 15px;
-    width: 75vw;
-    height: 5vh;
-    gap: 5px;
-    font-weight: 1000;
-    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 35px;
 
-    background: rgba(200, 138, 2, 0.4);
-    border: 2px solid #FFFFFF;
-    border-radius: 15px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
+    border: 1px solid #000000;
+    background-color: #D9BA76;
 }
 
-.informacao {
-    /* text-information */
-    color: #474747;
+.disciplinas-conteudo-principal>div {
+    /* info-disciplinas */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 45px 60px;
+    box-sizing: border-box;
+
+    background: #EAEAEA;
+    border-radius: 35px;
+}
+
+.disciplinas-conteudo-principal>input[type=checkbox] {
+    position: relative;
+    display: inline-block;
+    border: dashed 1px #CCC;
+    width: 25px;
+    height: 25px;
+    background: #EEE;
+    cursor: pointer;
+}
+
+.disciplinas-conteudo-principal>div>h2,
+.disciplinas-conteudo-principal>div>p {
+    margin: 0;
+}
+
+.button-matricular {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.button-matricular>a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.button-matricular>a>div {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 7px;
+
+    background: #2266F0;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    transition: all ease-in-out 0.3s;
+}
+
+.button-matricular>a>div:hover {
+    transform: scale(1.05);
+    border: 3px solid #000000;
 }

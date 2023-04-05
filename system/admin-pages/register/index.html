@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar - Sistema de controle acadêmico</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+
+    <main>
+        <a href="../cadastro/index.html">
+            <div>
+                <input id="button-voltar" type="button" value="Voltar">
+            </div>
+        </a>
+        <section class="principal">
+            <div class="box-university">
+                <img src="../../../src/universidadeOxford.png" alt="University of Oxford">
+                <h1>Sistema de controle acadêmico</h1>
+            </div>
+            <form class="register">
+                <h2>Registrar</h2>
+
+                <div class="box-select">
+                    <select name="select" id="user-type">
+                        <option value="STUDENT">Estudante</option>
+                        <option value="TEACHER">Professor</option>
+                        <option value="SECRETARY">Secretário</option>
+                    </select>
+                </div>
+
+                <div class="box-form">
+                    <input id="name" type="text" required>
+                    <label for="name">Nome</label>
+                </div>
+
+                <div class="box-form">
+                    <input id="email" type="text" required>
+                    <label for="email">E-mail</label>
+                </div>
+
+                <div class="box-form">
+                    <input id="id-number" type="text" required>
+                    <label for="id-number">CPF</label>
+                </div>
+
+                <div class="box-form">
+                    <input id="usuario" type="text" required>
+                    <label for="usuario">Usuário</label>
+                </div>
+
+                <div class="box-form">
+                    <input id="password" type="text" required>
+                    <label for="password">Senha</label>
+                </div>
+
+                <div class="box-form">
+                    <input id="birth-date" type="text" required>
+                    <label for="birth-date">Data de nascimento</label>
+                </div>
+
+                <div id="div-course" class="box-form">
+                    <input id="course" type="text" required>
+                    <label for="course">Curso</label>
+                </div>
+
+                <div class="box-button">
+                    <input id="button-registrar" type="button" value="Registrar">
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
